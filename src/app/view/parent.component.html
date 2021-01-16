@@ -1,0 +1,16 @@
+<app-viewchild name=""></app-viewchild>
+
+<p #pref>
+Start editing to see something magic happen
+</p>
+
+<app-viewChildren  name="Angular 6"  ></app-viewChildren>
+<app-viewChildren  name="Angular 7"  ></app-viewChildren>
+<app-viewChildren  name="Angular 8"  ></app-viewChildren>
+<app-viewChildren  name="Angular 9"  ></app-viewChildren>
+
+
+<!-- this is for content childre -->
+<app-tab-list>
+    <app-tab *ngFor="let tab of tabs" [tab]="tab"></app-tab>
+</app-tab-list>

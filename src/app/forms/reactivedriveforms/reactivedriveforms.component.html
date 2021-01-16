@@ -1,0 +1,15 @@
+<form [formGroup] = "formdata" (ngSubmit) = "onClickSubmit(formdata.value)">
+    <div class="form-group">
+      <label for="emailid">Email address</label>
+      <input type="text" name = "emailid" placeholder = "emailid" class = "formControl" formControlName = "emailid">
+       <br/>
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name = "password" placeholder = "password" class = "formControl" formControlName = "password" >
+         <br/>
+      </div>
+      <br>
+    <button type="submit"  [disabled] = "!formdata.valid" class="btn btn-primary">Submit</button>
+    <p>Email entered is : {{emailid}}</p>
+  </form>
